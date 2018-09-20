@@ -17,7 +17,8 @@ class Register extends Component{
         captureTheFlag : false,
         theCascader : false,
         pravikarsha : false,
-        hackTheCode : false
+        hackTheCode : false,
+        buildYourIdea : false
     }
     changeCapture = (e,field)=>{
         let newState = {};
@@ -49,7 +50,9 @@ class Register extends Component{
                 captureTheFlag : false,
                 theCascader : false,
                 pravikarsha : false,
-                hackTheCode : false
+                hackTheCode : false,
+                buildYourIdea : false
+
             });
             if(response.data.status)
                 alert("User Registered");
@@ -159,6 +162,12 @@ class Register extends Component{
                                         <label>
                                             <input type="checkbox" id="hackTheCode"  checked={this.state.hackTheCode} onChange={e=>this.changeCaptureForCheckbox(e,"hackTheCode")}/>
                                             <span>Hack The Code</span>
+                                        </label>
+                                    </div>
+                                    <div className="input-field col s10">
+                                        <label>
+                                            <input type="checkbox" id="buildYourIdea"  checked={this.state.buildYourIdea} onChange={e=>this.changeCaptureForCheckbox(e,"buildYourIdea")}/>
+                                            <span>Build Your Idea</span>
                                         </label>
                                     </div>        
                                     <div className=" col s8">

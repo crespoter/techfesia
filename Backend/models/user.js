@@ -9,7 +9,7 @@ var userSchema = mongoose.Schema({
     mobile : {type : String},
     institute : {type : String},
     timestamp : {type : String},
-    topbot : {type : Boolean},
+    topBot : {type : Boolean},
     quadrotorWorkshop : {type : Boolean},
     appathon : {type : Boolean},
     medTechHackathon : {type : Boolean},
@@ -19,7 +19,8 @@ var userSchema = mongoose.Schema({
     captureTheFlag : {type : Boolean},
     theCascader : {type : Boolean},
     pravikarsha : {type : Boolean},
-    hackTheCode : {type : Boolean}
+    hackTheCode : {type : Boolean},
+    buildYourIdea : {type : Boolean}
 });
 
 var User = mongoose.model('User', userSchema);
